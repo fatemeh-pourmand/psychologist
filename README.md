@@ -1,12 +1,15 @@
 # 🧠 PsychLog
 
-**PsychLog** is a free, Python-based app for digital psychology management.
-Patients log their daily emotions, and psychologists get **automated analysis** and **alerts** for critical situations, while normal reports are saved for long-term tracking.
+**PsychLog** is a free Python app for managing mental health.
+Patients log daily emotions, and psychologists get **instant alerts**, **automatic reports**, and can provide **timely interventions**.
 
 ## ✨ Features
 - 📝 Daily emotion logging
-- 📊 Automated emotion analysis
-- 🚨 Critical alerts for psychologists
-- 📚 Progress tracking in patient profiles
-- 💻 Fully free & open-source
+- 🚨 Instant alerts for sudden mood changes
+- 📊 Automatic daily reports
+- 💬 Secure, emotion-based chat
+- 🧠 NLP-based treatment priority
+- 🌐 Offline browser support
+- 💻 Free & open-source
+with
 python app.py
