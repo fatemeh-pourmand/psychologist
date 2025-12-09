@@ -44,3 +44,39 @@ Class DailyEmotion
         }
         self.emotions.append(entry)
         print(f"{self.patient.name} logged emotion {entry}")
+   if self.is_critical():
+self.alert("⚠️ Critical emotional change detected!")
+
+def is_critical(self):
+
+ if len(self.emotions) < 2:
+  return False
+yesterday = self.emotions[-2]
+today = self.emotions[-1]
+
+return yesterday["happiness"] >= 7 and today["sadness"] >= 7
+
+def alert(self, message):
+    
+ self.alerts.append(message)
+print(f"ALERT for {self.patient.name}: {message}")
+
+def get_latest_emotion(self):
+
+ if self.emotions:
+   return self.emotions[-1]
+ return None
+
+def get_average_emotion(self):
+
+ if not self.emotions:
+  return {"average_happiness": 0, "average_sadness": 0}
+total_happiness = sum(e["happiness"] for e in self.emotions)
+total_sadness = sum(e["sadness"] for e in self.emotions)
+count = len(self.emotions)
+return {
+"average_happiness": total_happiness / count,
+"average_sadness": total_sadness / count
+}
+ 
+
