@@ -86,5 +86,14 @@ Class Alert:
     self.send_message = send_message
     
     def__str__(self):
-    return f"Alert: {self.send_message}\nDate: {self.date}, Time: {self.time}"
-
+        return f"Alert: {self.send_message}\nDate: {self.date}, Time: {self.time}"
+Class Message:
+    def__init__(self,patient,psychologist,content,timestamp,id):
+        self.patient == patient 
+        self.psychologist = psychologist
+        self.content = content 
+        self.timestamp = timestamp
+        self.id = id
+        
+    def__str__(self):
+        return f"Message: {self.patient}, Psychologist: {self.psychologist}, Content: {slef.content}, Timestap: {self.timestap}"
