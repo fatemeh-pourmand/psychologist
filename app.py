@@ -78,5 +78,13 @@ return {
 "average_happiness": total_happiness / count,
 "average_sadness": total_sadness / count
 }
- 
+
+Class Alert:
+    def__init__(self,date,time,send_message):
+    self.date = date 
+    self.time = time
+    self.send_message = send_message
+    
+    def__str__(self):
+    return f"Alert: {self.send_message}\nDate: {self.date}, Time: {self.time}"
 
