@@ -29,5 +29,18 @@ Class Psychologist(user):
 
 Class DailyEmotion
 
-  def
-pass..
+  def __init__(self,patient):
+        self.patient = patient
+        self.emotions = [] 
+        self.alert = []
+        self.message = []
+    
+    def log_emotion(self,sadness,happieness):
+        
+        entry = {
+            "date": date.today(),
+            "sadness" : sadness,
+            "happiness": happieness
+        }
+        self.emotions.append(entry)
+        print(f"{self.patient.name} logged emotion {entry}")
