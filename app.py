@@ -97,3 +97,24 @@ Class Message:
         
     def__str__(self):
         return f"Message: {self.patient}, Psychologist: {self.psychologist}, Content: {slef.content}, Timestap: {self.timestap}"
+
+Class Message:
+    def__init__(self,patient,psychologist,content,timestamp,id):
+        self.patient == patient 
+        self.psychologist = psychologist
+        self.content = content 
+        self.timestamp = timestamp
+        self.id = id
+        
+    def__str__(self):
+       return f"Message: {self.patient}, Psychologist: {self.psychologist}, Content: {slef.content}, Timestap: {self.timestap}"
+
+Class NlpAnalysis:
+    def__init__(self): 
+       self.daily_reports = []
+       self.alert = []
+       self.patient_notes = []
+       self.treatment_emergencies = []
+       
+    def get_summary(self):
+return f"Patient Notes: {self.patient_notes}, Alert: {self.alert}, Treatment_emergencies: {self.treatment_emergencies}, Daily_reports: {self.daily_reports}  "
