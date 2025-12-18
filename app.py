@@ -1,4 +1,4 @@
-Class user:
+class user:
    def__init__(self,name):
       self.name= name
       self.chat_history = []
@@ -6,7 +6,7 @@ Class user:
    def send_message(self, message):
        self.chat_history.append(message)
        
-Class patient(user):
+class patient(user):
     def __init__(self,name)
     suoer().__init__(name)
     self.emptiom_history = []
@@ -14,7 +14,7 @@ Class patient(user):
  def log_emotion(self, emotion):
        self.emotion_history.appened(emotion)
        
-Class Psychologist(user):
+class Psychologist(user):
     def __init__(slef, name):
         super().__init__(name)
         self.patients = []
@@ -27,7 +27,7 @@ Class Psychologist(user):
         for p in seld.patients:
             print(f"{p.name} has {len(p.emotion_history)} emotion rntries")
 
-Class DailyEmotion
+class DailyEmotion
 
   def __init__(self,patient):
         self.patient = patient
@@ -79,7 +79,7 @@ return {
 "average_sadness": total_sadness / count
 }
 
-Class Alert:
+class Alert:
     def__init__(self,date,time,send_message):
     self.date = date 
     self.time = time
@@ -87,7 +87,7 @@ Class Alert:
     
     def__str__(self):
         return f"Alert: {self.send_message}\nDate: {self.date}, Time: {self.time}"
-Class Message:
+class Message:
     def__init__(self,patient,psychologist,content,timestamp,id):
         self.patient == patient 
         self.psychologist = psychologist
@@ -98,7 +98,7 @@ Class Message:
     def__str__(self):
         return f"Message: {self.patient}, Psychologist: {self.psychologist}, Content: {slef.content}, Timestap: {self.timestap}"
 
-Class Message:
+class Message:
     def__init__(self,patient,psychologist,content,timestamp,id):
         self.patient == patient 
         self.psychologist = psychologist
@@ -109,7 +109,7 @@ Class Message:
     def__str__(self):
        return f"Message: {self.patient}, Psychologist: {self.psychologist}, Content: {slef.content}, Timestap: {self.timestap}"
 
-Class NlpAnalysis:
+class NlpAnalysis:
     def__init__(self): 
        self.daily_reports = []
        self.alert = []
